@@ -265,8 +265,7 @@ for France lang = "fr"
    <br>
    --> 
    ```
-    <a href="mailto:Sahajjain@gmail.com">send me a email</a>
-   
+   <a href="mailto:Sahajjain@gmail.com">send me a email</a>
    Also we can hit call 
    <a href="tel:+919876543210">Call us</a>
    <br>
