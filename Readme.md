@@ -123,21 +123,21 @@ for France lang = "fr"
    MAX pixel  size = the Smallest, around 10px to 16px.
    ```
   - Notes on Html
-      - The tags element name is case insensitive.
+      - The tag element name is case insensitive.
       - A single H1 is typically used per page
-      - Follow the hierarchy from H1to H6 consistently.
-   - Why we don't skip size of h1 to h3 directly --> Skipping heading levels can be confuse both the users and search engines. It's best to maintain a proper hierarchical structure for better accessibility and SEO. 
+      - Follow the hierarchy from H1 to H6 consistently.
+   - Why we don't skip the size of h1 to h3 directly --> Skipping heading levels can be confuse both the users and search engines. It's best to maintain a proper hierarchical structure for better accessibility and SEO. 
 
 - Paragraphs
    ```
    <p> This is a Paragraph </p> 
-   The <p> Tag defines paragraph 
+   The <p> Tag defines a paragraph 
 
    Browsers automatically add a single blank line before and after each <p> element 
    ```
-   -  can we nest other HTML tags in P tag --> NO we can't 
-   Because p is already a block element and we can't nest other block elements in in a block element itself. 
-   But we can Include Inline elements in p tag like 
+   -  can we nest other HTML tags in the P tag --> NO we can't 
+   Because p is already a block element we can't nest other block elements in in a block element itself. 
+   But we can Include Inline elements in the p tag like 
    ```
    <Strong>, <em>
    ```
@@ -146,7 +146,7 @@ for France lang = "fr"
    - to break a Paragraph.
 - Horizontal rule
    - hr
-   - It gives a horizontal line in between Paragraph.
+   - It gives a horizontal line in between Paragraphs.
    - <hr> 
 
 - No matter how much whitespace you use inside HTML element content (which can include one or more spaces characters, but also line breaks), the HTML parser reduces each sequence of whitespace to a single space when rendering the code.
@@ -157,7 +157,7 @@ for France lang = "fr"
 ```
 - To comment out in HTML, Insert Information between <!-- and --> tags (Browser won't show these notes)
 
-- commenting in HTML allows developers to leave notes about their code its functionality or to indicate necessary changes for the future.
+- commenting in HTML allows developers to leave notes about their code and its functionality or to indicate necessary changes for the future.
 
 ## Text Formatting
    - Bold and Italic   
@@ -176,7 +176,7 @@ for France lang = "fr"
    - Preformatted Text
       ```
       <pre> --> used to give formatting to the text that can't be done using <p> tag
-      , <kbd> --> it's full form is Keyboard for commands  
+      , <kbd> --> its full form is a Keyboard for commands  
       it's used to show keyboard commands to the user
       ,<abbr> --> it's short of Abbreviation 
       Used to tell abbreviation to the user 
@@ -186,8 +186,8 @@ for France lang = "fr"
    - Text Highlighting
       ```
       <mark> --> Highlighting of text, 
-      <small> --> makes text smaller ,
-      <del> -->  it was used to show the modification of the document the output may be same as strikethrough but the use case if different.
+      <small> --> makes text smaller,
+      <del> -->  It was used to show the modification of the document the output may be the same as strikethrough but the use case is different.
       ```
    
       - the **s** Tag specifies text that is no longer correct, accurate or relevant, 
@@ -196,11 +196,11 @@ for France lang = "fr"
       ```
       <sub>, <sup>
       ```
-      - css is imp to show the website in better way 
+      - CSS is imp in showing the website in a better way 
       ```
       <p style= "red"></p> 
       ```  
-   -  TIP --> While using nested tag in one elements never mismatch the tags
+   -  TIP --> While using nested tags in one element never mismatch the tags
       ```
       ❌ <p>My cat is <strong>very grumpy.</p></strong>
       ✅ <p>My cat is <strong>very</strong> grumpy.</p>
@@ -211,7 +211,7 @@ for France lang = "fr"
  - Attributes of Anchor tag 
       - herf = the URL or the destination the link points to
       - Target = specifies where the linked content will be displayed (eg = _blank --> for a new window/tab)
-      - rel = Describes the relationship between the current page and teh linked page. "NOT used in real practice"
+      - rel = Describes the relationship between the current page and the linked page. "NOT used in real practice"
       - title =  provides additional information about the link
       - id = assigns a unique identifier to the anchor tag for linking within the page.
       "helps us redirect some request to a section of the page also"
@@ -257,26 +257,25 @@ for France lang = "fr"
       <br>Absolute URLs are complete URLs, including the protocol (http/https) and domain.
    
    - How does the download attribute work in the anchor tag?
-   --> Download used in the anchor tab is eazy 
+   --> Download used in the anchor tab is easy 
    ```
     <a href="./html.zip" download>Download Zip file  </a>
    ```
    - How do you create an HTML link that opens the user's default email client with a specific email address?
-   <br>
-   --> 
+
    ```
    <a href="mailto:Sahajjain@gmail.com">send me a email</a>
-   Also we can hit call 
+   Also, we can hit the call 
    <a href="tel:+919876543210">Call us</a>
    <br>
-   and we can open whatsapp to add them to a group.
+   and we can open WhatsApp to add them to a group.
    <a href="LINK_GOES_HERE"> join the wp group</a>
    ```
 
 - Bonus 
    - When to use Quotes
    <br>
-   So the best practice is Always include the attribute quotes. It avoids such problems, and results in more readable code.
+   So the best practice is to Always include the attribute quotes. It avoids such problems, and results in more readable code.
    <br>
    - Single or Double Quotes?
    <br>
@@ -296,14 +295,12 @@ for France lang = "fr"
       - **&reg**; = registered trademark symbol"&reg;"
       - **&trade**; = Trademark symbol "&trade;"
       - **&hearts**; = Heart symbol " &hearts;"
-   - When we need to use nbsp 
-   <br>
-   -->The **&nbsp**; entity is used to insert a non-breaking space, which prevents the browser from collapsing consecutive spaces into one
+   - When we need to use nbsp -->The **&nbsp** entity is used to insert a non-breaking space, which prevents the browser from collapsing consecutive spaces into one
    - How would you display a trademark symbol using an HTML entity?
    <br>
-   --> You can display a trademark symbol using the &trade; entity: **&trade**;
+   --> You can display a trademark symbol using the &trade; entity: **&trade** ; 
    - Why is it important to use HTML entities for special characters?
-   <br>
+   <br>         
    --> Using HTML entities ensures proper rendering of characters and symbols and helps avoid conflicts with HTML syntax
    - 4: Represent the dollar sign symbol using different HTML entity methods
    <br>
