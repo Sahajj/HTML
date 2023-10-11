@@ -161,58 +161,50 @@ for France lang = "fr"
 - commenting in HTML allows developers to leave notes about their code its functionality or to indicate necessary changes for the future.
 
 ## Text Formatting
-- Bold and Italic
-   - 
-   ```
-   <strong>, <em>
-   ```
+   - Bold and Italic   
+      ```
+         <strong>, <em>
+      ```
 
-- Underline and Strikethrough:
-   - 
-   ```
-   <u>, <s>
-   ```
-- Subscript and superscript
-   - 
-   ```
-   <sub>, <sup>
-   ```
-- Preformatted Text
-   - 
-   ```
-   <pre> --> used to give formatting to the text that can't be done using <p> tag
-   , <kbd> --> it's full form is Keyboard for commands  
-   it's used to show keyboard commands to the user
-   ,<abbr> --> it's short of Abbreviation 
-   Used to tell abbreviation to the user 
-   like WHO = World Health Organization.
-   <abbr title = "World Health Organization"> WHO </abbr>
-   ```
-- Text Highlighting
-   - 
-   ```
-   <mark> --> Highlighting of text, 
-   <small> --> makes text smaller ,
-   <del> -->  it was used to show the modification of the document the output may be same as strikethrough but the use case if different.
-   ```
-
-   - the **s** Tag specifies text that is no longer correct, accurate or relevant, 
-   - The **del** Tag is used to identify text that has been deleted from a document but retained to show  the history of modification made to the document.
-- Inline Styling
-   - 
-   ```
-   <sub>, <sup>
-   ```
-   - css is imp to show the website in better way 
-   - 
-   ```
-   <p style= "red"></p> 
-   ```
+   - Underline and Strikethrough: 
+      ```
+      <u>, <s>
+      ```
+   - Subscript and superscript
+      ```
+      <sub>, <sup>
+      ```
+   - Preformatted Text
+      ```
+      <pre> --> used to give formatting to the text that can't be done using <p> tag
+      , <kbd> --> it's full form is Keyboard for commands  
+      it's used to show keyboard commands to the user
+      ,<abbr> --> it's short of Abbreviation 
+      Used to tell abbreviation to the user 
+      like WHO = World Health Organization.
+      <abbr title = "World Health Organization"> WHO </abbr>
+      ```
+   - Text Highlighting
+      ```
+      <mark> --> Highlighting of text, 
+      <small> --> makes text smaller ,
+      <del> -->  it was used to show the modification of the document the output may be same as strikethrough but the use case if different.
+      ```
    
+      - the **s** Tag specifies text that is no longer correct, accurate or relevant, 
+      - The **del** Tag is used to identify text that has been deleted from a document but retained to show  the history of modification made to the document.
+   - Inline Styling
+      ```
+      <sub>, <sup>
+      ```
+      - css is imp to show the website in better way 
+      ```
+      <p style= "red"></p> 
+      ```  
    -  TIP --> While using nested tag in one elements never mismatch the tags
-   ```
-   ❌ <p>My cat is <strong>very grumpy.</p></strong>
-   ✅ <p>My cat is <strong>very</strong> grumpy.</p>
-   ```
+      ```
+      ❌ <p>My cat is <strong>very grumpy.</p></strong>
+      ✅ <p>My cat is <strong>very</strong> grumpy.</p>
+      ```
    
-
+   
