@@ -129,7 +129,6 @@ for France lang = "fr"
    - Why we don't skip size of h1 to h3 directly --> Skipping heading levels can be confuse both the users and search engines. It's best to maintain a proper hierarchical structure for better accessibility and SEO. 
 
 - Paragraphs
-   - 
    ```
    <p> This is a Paragraph </p> 
    The <p> Tag defines paragraph 
@@ -206,5 +205,107 @@ for France lang = "fr"
       ❌ <p>My cat is <strong>very grumpy.</p></strong>
       ✅ <p>My cat is <strong>very</strong> grumpy.</p>
       ```
+
+## HTML Anchor Tag
+ - The **a** tag defines a hyperlink, which is used to link from one page to another.
+ - Attributes of Anchor tag 
+      - herf = the URL or the destination the link points to
+      - Target = specifies where the linked content will be displayed (eg = _blank --> for a new window/tab)
+      - rel = Describes the relationship between the current page and teh linked page. "NOT used in real practice"
+      - title =  provides additional information about the link
+      - id = assigns a unique identifier to the anchor tag for linking within the page.
+      "helps us redirect some request to a section of the page also"
+      - Class = Assigns a class for styling or JavaScript interactions
+      - style: Applies inline CSS styling to the anchor.  
+      - tabindex: Specifies the tab order when navigating using the keyboard.
+      - accesskey: Defines a keyboard shortcut to activate the link.
+      - aria-*: Attributes for accessibility purposes (e.g., aria-label). 
+      - Download: Suggests that the target will be downloaded when clicked.
+
+- Question 
+   - How can you create a link within the same webpage that takes the user to a specific section or element on the page?
+      --> use the id Attribute 
+
+   - **Also we can make it with smooth scrolling**
+      - Go to head 
+      - in it use style tag 
+      - and add a property 
+      - CSS scroll property 
+      - scroll-behavior 
+      - make it smooth
+      - It will look like this 
+      ```
+      <head>
+         <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Html anchor tag</title>
+         <style>
+            html{
+               scroll-behavior: smooth;
+            }
+         </style>
+      </head>
+      ```
+   - What's the difference between relative and absolute URLs in the href attribute?
+      --> 
+      <br>
+      **Relative path**
+      <br>Relative URLs are URLs that are relative to the current page's URL.
+      <br>
+      **Absolute path** 
+      <br>Absolute URLs are complete URLs, including the protocol (http/https) and domain.
    
+   - How does the download attribute work in the anchor tag?
+   --> Download used in the anchor tab is eazy 
+   ```
+    <a href="./html.zip" download>Download Zip file  </a>
+   ```
+   - How do you create an HTML link that opens the user's default email client with a specific email address?
+   <br>
+   --> 
+   ```
+    <a href="mailto:Sahajjain@gmail.com">send me a email</a>
    
+   Also we can hit call 
+   <a href="tel:+919876543210">Call us</a>
+   <br>
+   and we can open whatsapp to add them to a group.
+   <a href="LINK_GOES_HERE"> join the wp group</a>
+   ```
+
+- Bonus 
+   - When to use Quotes
+   <br>
+   So the best practice is Always include the attribute quotes. It avoids such problems, and results in more readable code.
+   <br>
+   - Single or Double Quotes?
+   <br>
+   **Double Quotes are Best Practice** 
+   & remember that using one double and one single is **not RIGHT.** 
+
+## HTML Entities 
+   - HTML entities are codes used to represent special characters and symbols that have reserved meanings in HTML. These entities are especially important when you  want to display characters that might conflict with HTML syntax or when you want to display characters that aren't directly available on your keyboard. HTML entities are represented using an ampersand (&) followed by a code and a semicolon (;)
+      - **&lt**; = Less than sign "<"
+      - **&gt**; = greater than sign ">"
+      - **&amp**; = Ampersand "&"
+      - **&quot**; = Double Quote (")
+      - **&apos**; = Apostrophe or Single Quote"'"
+      - **&nbsp**; = non Breaking space " "
+      - **&dollar**; = Dollar sign "$"
+      - **&copy**; = Copyright symbol " &copy;"
+      - **&reg**; = registered trademark symbol"&reg;"
+      - **&trade**; = Trademark symbol "&trade;"
+      - **&hearts**; = Heart symbol " &hearts;"
+   - When we need to use nbsp 
+   <br>
+   -->The **&nbsp**; entity is used to insert a non-breaking space, which prevents the browser from collapsing consecutive spaces into one
+   - How would you display a trademark symbol using an HTML entity?
+   <br>
+   --> You can display a trademark symbol using the &trade; entity: **&trade**;
+   - Why is it important to use HTML entities for special characters?
+   <br>
+   --> Using HTML entities ensures proper rendering of characters and symbols and helps avoid conflicts with HTML syntax
+   - 4: Represent the dollar sign symbol using different HTML entity methods
+   <br>
+   --> Using Named Entity: &dollar ; & also Using Hexadecimal Numeric Reference: #x00024; OR Using Decimal Numeric Reference: &#36 ; 
