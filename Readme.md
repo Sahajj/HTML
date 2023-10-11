@@ -122,9 +122,97 @@ for France lang = "fr"
    <h6> Heading 1</h6>
    MAX pixel  size = the Smallest, around 10px to 16px.
    ```
+  - Notes on Html
+      - The tags element name is case insensitive.
+      - A single H1 is typically used per page
+      - Follow the hierarchy from H1to H6 consistently.
+   - Why we don't skip size of h1 to h3 directly --> Skipping heading levels can be confuse both the users and search engines. It's best to maintain a proper hierarchical structure for better accessibility and SEO. 
+
 - Paragraphs
-   - p
+   - 
+   ```
+   <p> This is a Paragraph </p> 
+   The <p> Tag defines paragraph 
+
+   Browsers automatically add a single blank line before and after each <p> element 
+   ```
+   -  can we nest other HTML tags in P tag --> NO we can't 
+   Because p is already a block element and we can't nest other block elements in in a block element itself. 
+   But we can Include Inline elements in p tag like 
+   ```
+   <Strong>, <em>
+   ```
 - Line Break 
    - br
+   - to break a Paragraph.
 - Horizontal rule
-   - hr 
+   - hr
+   - It gives a horizontal line in between Paragraph.
+   - <hr> 
+
+- No matter how much whitespace you use inside HTML element content (which can include one or more spaces characters, but also line breaks), the HTML parser reduces each sequence of whitespace to a single space when rendering the code.
+
+## Comments in HTML 
+``` 
+<!-- Comment here-- >
+```
+- To comment out in HTML, Insert Information between <!-- and --> tags (Browser won't show these notes)
+
+- commenting in HTML allows developers to leave notes about their code its functionality or to indicate necessary changes for the future.
+
+## Text Formatting
+- Bold and Italic
+   - 
+   ```
+   <strong>, <em>
+   ```
+
+- Underline and Strikethrough:
+   - 
+   ```
+   <u>, <s>
+   ```
+- Subscript and superscript
+   - 
+   ```
+   <sub>, <sup>
+   ```
+- Preformatted Text
+   - 
+   ```
+   <pre> --> used to give formatting to the text that can't be done using <p> tag
+   , <kbd> --> it's full form is Keyboard for commands  
+   it's used to show keyboard commands to the user
+   ,<abbr> --> it's short of Abbreviation 
+   Used to tell abbreviation to the user 
+   like WHO = World Health Organization.
+   <abbr title = "World Health Organization"> WHO </abbr>
+   ```
+- Text Highlighting
+   - 
+   ```
+   <mark> --> Highlighting of text, 
+   <small> --> makes text smaller ,
+   <del> -->  it was used to show the modification of the document the output may be same as strikethrough but the use case if different.
+   ```
+
+   - the **s** Tag specifies text that is no longer correct, accurate or relevant, 
+   - The **del** Tag is used to identify text that has been deleted from a document but retained to show  the history of modification made to the document.
+- Inline Styling
+   - 
+   ```
+   <sub>, <sup>
+   ```
+   - css is imp to show the website in better way 
+   - 
+   ```
+   <p style= "red"></p> 
+   ```
+   
+   -  TIP --> While using nested tag in one elements never mismatch the tags
+   ```
+   ❌ <p>My cat is <strong>very grumpy.</p></strong>
+   ✅ <p>My cat is <strong>very</strong> grumpy.</p>
+   ```
+   
+
