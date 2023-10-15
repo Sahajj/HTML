@@ -390,4 +390,71 @@ This helps reduce the load on server side.
    - srcset --> The srcset attribute specifies the URL of the image to use in different situations.
    - sizes --> The sizes attribute on an <**img**> element specifies different image widths <br>  These widths are tied to browser conditions which helps create responsive images.
 
-   
+## Void Elements In HTML
+ - Void elements / Empty elements
+      - Not all parts of web page use the usual pattern of having an opening tag, some content, and then a closing tag. Some parts only need a single tag to work. These are called "void element" or "Empty elements".
+      - Examples = img tag, Area Tag, br tag , hr tag, etc.
+
+
+## Picture Tag 
+ - The <**picture**> HTML elements contains zero or more <**source**> elements and one <**img**> element to offer alternative versions of an image for different display/devices scenarios.
+
+ ```
+ <picture>
+ <source srcset = "./sahaj.webp">
+ <source srcset = "./sahaj.png">
+ <img src = "./Sahaj.jpg" alt = "" />
+ </picture> 
+
+ it will try to load 1st one and then the second and so on.
+
+ the images in all 3 formats should be same
+ ```
+ - use webp because it's file size is smaller than any other extension.
+
+ ```
+     <picture>
+      <source srcset="./images/html.webp" type="image/webp" />
+      <source srcset="./images/html.jpg" type="image/jpg" />
+      <source srcset="./images/html.jpeg" type="image/jpeg" />
+      <source srcset="./images/html.svg" type="image/svg" />
+      <img
+        src="./images/html.png"
+        alt="best html course by sah"
+        width="500"
+      />
+    </picture>
+``` 
+
+## Figure HTML
+ - The <**figure**> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+
+- While the content of the <**figure**> element is related to the main flow, its position is independent of the main flow, and if removed it should not affect the flow of the document.
+
+- Tip: The <**figcaption**> element is used to add a caption for the <**figure**> element.
+
+## List in HTML 
+
+ - Unordered HTML List
+An unordered list starts with the <**ul**> tag. Each list item starts with the <**li**> tag.
+ - The list items will be marked with bullets (small black circles) by default:
+ - Unordered List (<**ul**>) Styles:
+```
+   <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+   </ul>
+```
+- Ordered HTML List
+An ordered list starts with the <**ol**> tag. Each list item starts with the <**li**> tag.
+- The list items will be marked with numbers by default:
+
+ ```
+ <ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+ ```
+
