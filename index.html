@@ -1,11 +1,272 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thapa tech website</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap");
+        html {
+          /* font-size: 62.5%; */
+          font-family: "jost", sans-serif;
+          background-color: #efefef;
+        }
+        h1 {
+          font-weight: bold;
+          font-size: 2rem;
+        }
+  
+        li {
+          list-style: none;
+        }
+  
+        li,
+        p,
+        label {
+          font-family: Urbanist;
+          letter-spacing: 0.06;
+          line-height: 1.6;
+          font-size: 1.4rem;
+        }
+        audio {
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          border-radius: 25px;
+        }
+        progress {
+          height: 2rem;
+          width: 20rem;
+        }
+  
+        /* ul,
+        .service-section .service-gallery {
+          display: flex;
+          gap: 1rem;
+        } */
+      </style>
+</head>
+<body>
+    <!-- our header  -->
+    <header>
+        <div class = "logo">
+            <a href="#" tabindex="_blank">
+                <img src="./images/logo.png" alt="Thapa_logo">
+            </a>
+        </div>
 
-<html>
-   <head>
-      <title> The Best Html course</title>
-   </head>
+        <nav>
+            <ul style="list-style: none; display:flex; gap:15px;">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-   <body>
-      <h1> best html course </h1>
-   </body>
+    <!-- our main section  -->
+
+    <main>
+        <div class = " hero-content">
+            <h1>I am Vinod Bhadur Thapa a.k.a Thapa techinical</h1>
+            <p>This website is all about Website Development, Technical, Tips and
+                Tricks, Designs Principle, Source Code sales and Programming videos in
+                the Hindi Language.
+            </p>
+            <button>
+                See my works
+            </button>
+        <a href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA"
+        target="_blank"">
+            <button>
+                visit youtube
+            </button>
+        </a>
+        </div>
+
+        <!-- hero sec images  -->
+        <div class = " hero-content">
+            <figure>
+                <img src="./images/html.webp" 
+                alt="Hero section image thapa technical"
+                width = "500"
+                height="auto"
+                >
+            </figure>
+        </div>
+    </main>
+
+    <!-- about section  -->
+    <section class = "about-section">
+        <h2>About Thapa Technical</h2>
+        <div class="about-content">
+            <p>It's great to meet you! I’m Thapa Technical.</p>
+        <p>
+          Thapa Technical is an amazing YouTube channel for learning web
+          development. Their tutorials are easy to follow and enjoyable. By
+          watching their videos, you can learn the skills needed for a web
+          development job. Check out Thapa Technical to boost your chances of
+          getting hired in this field!
+        </p>
+
+        <p><strong> My coding Knowledge</strong></p>
+        <div class ="about-progress">
+            <label for="html">HTML CODE: </label>
+            <progress id="html" max ="100" value = "100"> 100% HTML</progress>
+        </div>
+        <div class ="about-progress">
+            <label for="html">Css: </label>
+            <progress id="html" max ="100" value = "10"> 10% Css</progress>
+        </div>
+        <div class ="about-progress">
+            <label for="html">JavaScript </label>
+            <progress id="html" max ="100" value = "0"> 0% JavaScript</progress>
+        </div>
+        <div class ="about-progress">
+            <label for="html">MERN </label>
+            <progress id="html" max ="100" value = "0"> 0% MERN</progress>
+        </div>
+        </div>
+    </section>
+
+    <!-- our services section  -->
+
+    <Section class="Our-Services-section">
+         <h2>Our Services</h2>
+        <div class="Services-data" style = "display: flex;"> 
+            <figure>
+                <img src="./images/html.webp" alt="HTML website service" width = "300" >
+                <figcaption>HTML website Development</figcaption>
+            </figure>
+
+            <figure>
+                <img src="./images/css1.png" alt="HTML website service" width = "300" >
+                <figcaption>Css website Development</figcaption>
+            </figure>
+
+            <figure>
+                <img src="./images/js1.png" alt="HTML website service" width = "300" >
+                <figcaption>JavaScript website Development</figcaption>
+            </figure>
+        </div>
+    </Section>
+
+    <!-- our block section  -->
+    <section>
+        <h2>Our Blogs</h2>
+        <article>
+            <header>
+               <h2>
+                Elevate your Web Development Skils with Thapa Technical
+               </h2> 
+            </header>
+            <p> <strong> <em> Thapa Technical  </em></strong> is an amazing Youtube channel for learning web development. 
+                There tutorials are easy to follow and enjoyable. By watching their videos, you can learn the skills needed for a Development job. 
+                Check out Thapa Technical to boost your chances of getting hired in this field!.
+            </p>
+
+            <section>
+                <h3>About us</h3>
+                <p>
+                   Thapa Technical is an amazing Youtube channel for learning web development. There tutorials are easy to follow and enjoyable. By watching their videos, you can learn the skills needed for a Development job. Check out Thapa Technical to boost your chances of getting hired in this field!.
+                </p>
+            </section>
+
+            <section>
+                <h3>Unlock Your Potential with Easy-to-Follow Tutorials</h3>
+                <p>
+                   Thapa Technical is an amazing Youtube channel for learning web development. There tutorials are easy to follow and enjoyable. By watching their videos, you can learn the skills needed for a Development job. Check out Thapa Technical to boost your chances of getting hired in this field!.
+                </p>
+            </section>
+
+            <section>
+                <h3>Your Gateway to Web Development Success</h3>
+                <p>
+                   Thapa Technical is an amazing Youtube channel for learning web development. There tutorials are easy to follow and enjoyable. By watching their videos, you can learn the skills needed for a Development job. Check out Thapa Technical to boost your chances of getting hired in this field!.
+                </p>
+            </section>
+
+            <section>
+                <h3>Boost Your Employability with Thapa Technical</h3>
+                <p>
+                   Thapa Technical is an amazing Youtube channel for learning web development. There tutorials are easy to follow and enjoyable. By watching their videos, you can learn the skills needed for a Development job. Check out Thapa Technical to boost your chances of getting hired in this field!.
+                </p>
+            </section>
+
+            <p>
+                Thapa Technical is an amazing Youtube channel for learning web development. There tutorials are easy to follow and enjoyable. By watching their videos, you can learn the skills needed for a Development job. Check out Thapa Technical to boost your chances of getting hired in this field!.
+             </p>
+
+             <p>thank you for reading till the end</p>
+        </article>
+    </section>
+
+    <!-- podcast section  -->
+
+    <section class= "podcast-section">
+        <p><em>I have also added web development podcast on my thapa technical website click on the play button to play</em></p>
+        
+        <audio controls autoplay muted>
+            <source src="./audio/audio_thapa.mp3" type = "audio/mpeg" />
+            <source src="./audio/audio_thapa.wav" type = "audio/wav" />
+            Your browser does not support the audio element.
+        </audio>
+    
+    </section>
+
+    <!-- other article link section  -->
+    <section class="blog-link-section">
+        <p>Hope you like my other blogs too.</p>
+        <ul>
+            <li><a href="https://www.youtube.com/@ThapaTechnical" target="_blank">Please subscribe to my youtube channel</a></li>
+            <li><a href="https://www.youtube.com/@ThapaTechnical" target="_blank">Please share this video with your friends</a></li>
+            <li><a href="https://www.youtube.com/@ThapaTechnical" target="_blank"> Source code is free</a></li>
+            <li><a href="https://www.youtube.com/@ThapaTechnical" target="_blank">Bhag</a></li>
+            <li><a href="https://www.youtube.com/@ThapaTechnical" target="_blank">Bhai nashe hore h</a></li>
+        </ul>
+
+    </section>
+
+    <!-- contact us  -->
+    <section class="contact-section">
+        <h2>Feel free to contact us</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.26131732789!2d73.91411937534653!3d18.56225398253939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c147b8b3a3bf%3A0x6f7fdcc8e4d6c77e!2sPhoenix%20Marketcity%20Pune!5e0!3m2!1sen!2sin!4v1693563525384!5m2!1sen!2sin"
+          width="100%"
+          height="450"
+          style="border: 0"
+          title="my mall place"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <!-- form section  -->
+        <form>
+          <div>
+            <label for="username">Username</label>
+            <input type="text" id="username" />
+          </div>
+          <br />
+          <div>
+            <label for="email">Enter your email</label>
+            <input type="email" id="email" />
+          </div>
+          <br />
+          <div>
+            <label for="textarea">Message</label>
+            <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+          </div>
+          <br />
+          <input type="submit" value="submit" />
+        </form>
+      </section>
+    
+      <!-- footer section  -->
+    <footer>
+        <p>
+            Copyright &copy;2023 All rights reserved | This template is made with ❤
+            by Terabaapbc
+        </p>
+    </footer>  
+</body>
 </html>
