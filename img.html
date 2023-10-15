@@ -1,0 +1,80 @@
+<!-- *------------------------------------- -->
+<!--* HTML IMAGE TAG  
+<!-- *---------------------------------------- -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Images </title>
+  <style>
+    html{
+      font-family: "jost" , sans-serif;
+      font-weight: bold;
+      /* text-align: center; */
+      background-color: #efefef;
+      /* color : #fff; */
+    }
+    img {
+      /* max-width : 250px; */
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0 px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Html Img Tag</h1>
+  <a href="">
+  <img src="./images/html.png" alt="My Html Thumbnail" 
+  width = "250" height="150" title = "html course banner" 
+  loading = "lazy">
+  </a>
+
+  <br>
+  <img src="./images/html.png" 
+  alt="Clickable World Map"
+  usemap = "#map"
+  width = "250"
+  height = "150"
+  />
+
+  <map name="map">
+    <area 
+    shape="rect" 
+    coords="0,0,125,150" 
+    href="https://youtube.com/watch?v=5ccq_nLHneE" 
+    alt="My yt channel link"
+    />
+    <!--     <area 
+    shape="polygon" 
+    coords="300, 1001 350, 200, 250, 200" 
+    href="https://youtube.com/watch?v=5ccq_nLHneE" 
+    alt="south Area"
+    /> -->
+    <!--     <area 
+    shape="circle" 
+    coords="200,150,50" 
+    href="https://youtube.com/watch?v=5ccq_nLHneE" 
+    alt="Central Area"
+    /> -->
+  </map>
+  <br>
+  <img
+  src="images/html.png"
+  alt="Responsive Image"
+  srcset="
+    images/html-400.jpg   400w,
+    images/html-600.jpg   600w,
+    images/html-800.jpg   800w,
+    images/html-1000.jpg 1000w
+  "
+  sizes="(max-width: 600px) 400px,
+            (max-width: 800px) 600px,
+            (max-width: 1100px) 1000px,
+            1200px"
+/>
+
+</body>
+</html>
+

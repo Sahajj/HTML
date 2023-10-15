@@ -295,6 +295,7 @@ for France lang = "fr"
       - **&reg**; = registered trademark symbol"&reg;"
       - **&trade**; = Trademark symbol "&trade;"
       - **&hearts**; = Heart symbol " &hearts;"
+- Question 
    - When we need to use nbsp -->The **&nbsp** entity is used to insert a non-breaking space, which prevents the browser from collapsing consecutive spaces into one
    - How would you display a trademark symbol using an HTML entity?
    <br>
@@ -305,3 +306,88 @@ for France lang = "fr"
    - 4: Represent the dollar sign symbol using different HTML entity methods
    <br>
    --> Using Named Entity: &dollar ; & also Using Hexadecimal Numeric Reference: #x00024; OR Using Decimal Numeric Reference: &#36 ; 
+
+## Image tag 
+ - the <**img**> tag is used to embed(ADD) an image in an HTML page.
+ ```
+ <img src = "/image.png" alt= "alt text"/>
+
+sre --> Specifies the path of teh image
+alt --> specifies an alternate text for the image, if the image for some reason cannot be displayed.
+width --> width of the image
+height --> height of the image
+title --> give extra info about the image
+loading --> lazy Meaning that the image will load only when you get to the section not before that 
+
+This helps reduce the load on server side.
+ ```
+ - Some Deprecated image tags Align, Border, hspace, vpace.
+ - Best practice 
+ ``` 
+ ❌ <img alt="image" src="penguin.jpg" /> 
+ Bad for Seo ranking
+
+ ✅<img  alt="A Rockhopper Penguin standing on a beach."  src="penguin.jpg" /> 
+ ``` 
+
+ - Always write proper description in alt Attribute
+ - how to make image responsive 
+      - Width = 100% 
+      - height = auto
+      - we can also update the css in that we can say max-width = 500px;
+- Question 
+  - How would you make an image responsive using the width attribute?
+  <br>
+  You can set the width attribute to a percentage value (e.g., width="100%") to make the image adjust its width based on the available space.
+  - How do you create an image link using the <**img**> tag?
+  <br>
+  You wrap the <**img**> tag with an anchor <**a**> tag and provide the href attribute in the <**a**> tag.
+  - What's the difference between relative and absolute URLs in the href attribute?
+  <br>
+  Relative URLs are URLs that are relative to the current page's URL.<br> Absolute URLs are complete URLs, including the protocol (http/https) and domain.
+  - Why is providing descriptive alt text for images important? It improves 
+  <br>
+  accessibility for users with visual impairments and helps search engines understand image content.
+  - Another way to clicking the image is Map Elements
+  ```
+   <img src="./images/html.png" 
+  alt="Clickable World Map"
+  usemap = "#map"
+  width = "250"
+  height = "150"
+  />
+
+  <map name="map">
+    <area 
+    shape="rect" 
+    coords="0,0,125,150" 
+    href="https://youtube.com/watch?v=5ccq_nLHneE" 
+    alt="My yt channel link"
+    />
+    <!--     <area 
+    shape="polygon" 
+    coords="300, 1001 350, 200, 250, 200" 
+    href="https://youtube.com/watch?v=5ccq_nLHneE" 
+    alt="south Area"
+    /> -->
+    <!--     <area 
+    shape="circle" 
+    coords="200,150,50" 
+    href="https://youtube.com/watch?v=5ccq_nLHneE" 
+    alt="Central Area"
+    /> -->
+  </map>
+
+  area --> is the area where it's clickable 
+  shape --> in which shape it's clickable 
+  coords --> coordinates of the shape in image 
+  href --> link 
+  alt --> alternative
+  ```
+  - we can use map tag to define an image map. An image map is an image which clickable area.
+  - the required name attribute of the map element is associated with the img's usemap attributes and creates a relationship between the image and map.
+- Advanced part
+   - srcset --> The srcset attribute specifies the URL of the image to use in different situations.
+   - sizes --> The sizes attribute on an <**img**> element specifies different image widths <br>  These widths are tied to browser conditions which helps create responsive images.
+
+   
