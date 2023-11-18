@@ -297,9 +297,7 @@ for France lang = "fr"
       - **&hearts**; = Heart symbol " &hearts;"
 - Question 
    - When we need to use nbsp -->The **&nbsp** entity is used to insert a non-breaking space, which prevents the browser from collapsing consecutive spaces into one
-   - How would you display a trademark symbol using an HTML entity?
-   <br>
-   --> You can display a trademark symbol using the &trade; entity: **&trade** ; 
+   - How would you display a trademark symbol using an HTML entity? <br> --> You can display a trademark symbol using the &trade; entity: **&trade** ; 
    - Why is it important to use HTML entities for special characters?
    <br>         
    --> Using HTML entities ensures proper rendering of characters and symbols and helps avoid conflicts with HTML syntax
@@ -337,18 +335,12 @@ This helps reduce the load on server side.
       - we can also update the css in that we can say max-width = 500px;
 - Question 
   - How would you make an image responsive using the width attribute?
-  <br>
-  You can set the width attribute to a percentage value (e.g., width="100%") to make the image adjust its width based on the available space.
-  - How do you create an image link using the <**img**> tag?
-  <br>
-  You wrap the <**img**> tag with an anchor <**a**> tag and provide the href attribute in the <**a**> tag.
-  - What's the difference between relative and absolute URLs in the href attribute?
-  <br>
-  Relative URLs are URLs that are relative to the current page's URL.<br> Absolute URLs are complete URLs, including the protocol (http/https) and domain.
-  - Why is providing descriptive alt text for images important? It improves 
-  <br>
-  accessibility for users with visual impairments and helps search engines understand image content.
+  <br> You can set the width attribute to a percentage value (e.g., width="100%") to make the image adjust its width based on the available space.
+  - How do you create an image link using the <**img**> tag? <br> You wrap the <**img**> tag with an anchor <**a**> tag and provide the href attribute in the <**a**> tag.
+  - What's the difference between relative and absolute URLs in the href attribute? <br> Relative URLs are URLs that are relative to the current page's URL.<br> Absolute URLs are complete URLs, including the protocol (http/https) and domain.
+  - Why is providing descriptive alt text for images important? It improves  <br> accessibility for users with visual impairments and helps search engines understand image content.
   - Another way to clicking the image is Map Elements
+
   ```
    <img src="./images/html.png" 
   alt="Clickable World Map"
