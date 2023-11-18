@@ -3,6 +3,136 @@
 <!-- *---------------------------------------- -->
 <!--? The <table> HTML element represents tabular data — that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data. -->
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table{
+      text-align: center;
+      border: 1px solid #000;
+      border-collapse: collapse;
+      padding: 10px;
+    }
+    tr,td,th{
+      border: 2px solid #000;
+      padding: 10px
+    }
+  </style>
+</head>
+<body>
+  <h1>HTML table tag</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>
+          username
+        </th>
+        <th>
+          password
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      <td>
+        vinod
+      </td>
+      <td>
+        thapa
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Sahaj
+      </td>
+      <td>
+        Jain
+      </td>
+    </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="2">
+          Count:2
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+  
+  <hr>
+
+  <table>
+    <thead>
+    <tr>
+      <th colspan="7">Time-Table</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <th rowspan="7">
+        Hours
+      </th>
+    </tr>
+    <tr>
+      <th>mon</th>
+      <th>mon</th>
+      <th>mon</th>
+      <th>mon</th>
+      <th>mon</th>
+      <th>mon</th>
+    </tr>
+    <tr>
+      <td>Maths</td>
+      <td>Maths</td>
+      <td>Maths</td>
+      <td>Maths</td>
+      <td>Maths</td>
+      <td>Maths</td>
+    </tr>
+    <tr>
+      <td>Science</td>
+      <td>Science</td>
+      <td>Science</td>
+      <td>Science</td>
+      <td>Science</td>
+      <td>Science</td>
+    </tr>
+    <tr>
+      <td colspan="7">Lunch</td>
+    </tr>
+    <tr>
+      <td>SST</td>
+      <td>SST</td>
+      <td>SST</td>
+      <td>SST</td>
+      <td>SST</td>
+      <td rowspan="2">Games</td>
+    </tr>
+    <tr>
+      <td>CS</td>
+      <td>CS</td>
+      <td>CS</td>
+      <td>CS</td>
+      <td>CS</td>
+    </tr>
+
+    </tbody>
+  </table>
+</body>
+</html>
+
+
+
+
+
+
+
 <!-- *------------------------------------- -->
 <!--*  LIST OF DEPRECATED TAGS - HTML TABLES
 <!-- *---------------------------------------- -->

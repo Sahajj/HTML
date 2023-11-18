@@ -1,0 +1,117 @@
+<!-- *------------------------------------- -->
+<!--* HTML FORM TAG  
+<!-- *---------------------------------------- -->
+
+<!--? The <form> tag is used to create an HTML form for user input. -->
+
+<!--? The <input> HTML element is used to create interactive controls for web-based forms to accept data from the user. We must write inside the tag. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap");
+    html {
+      font-family: "jost", sans-serif;
+      background-color: #efefef;
+    }
+    h1 {
+      font-weight: bold;
+    }
+  </style>
+  <body>
+    <h1>HTML FORM</h1>
+    <!-- Add Form Here -->
+    <form > 
+      <div>
+        <label for="">username</label>
+        <input type="text" id = "username" />
+      </div>
+      <div>
+        <label for="">Enter your Email</label>
+        <input type="email" id = "email" />
+      </div>
+      <div>
+        <label for="">Message</label>
+        <textarea 
+        name="textarea" 
+        id="textarea" 
+        cols="30" 
+        rows="10"
+        placeholder="Enter your comments here">
+
+        </textarea>
+      </div>
+
+
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your Password here"/>
+      </div>
+
+      <div>
+        <label for="number">Number</label>
+        <input type="number" id="number" max="10" min = "1" value="10"/>
+      </div>
+
+      <div>
+        <label for="gneder">Gender</label>
+        <input type="radio" name = "Gender" value="male"> male
+        <input type="radio" name = "Gender" value="female"> female
+      </div>
+
+      <div>
+        <label for="interest">Interest</label>
+        <input type="checkbox" name = "interest" value="Music"> Music
+        <input type="checkbox" name = "interest" value="Dance"> Dance
+      </div>
+
+
+      <!-- select box and data list are one and the same. -->
+      <div>
+        <label for="country">Fav Country</label>
+        <!-- Select box  -->
+        <select name="country " id="country">
+          <option value="USA">USA</option>
+          <option value="India">India</option>
+          <option value="japan">japan</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="country">Fav Country</label>
+       <!-- Datalist -->
+       <!--! I can add more new data directly in the data list and others can also use it once it's there  -->
+        <input type="text" id="country" name="country" list="countries" />
+        <datalist id="countries">
+          <option value="USA"> USA</option>
+          <option value="India">India</option>
+          <option value="japan">japan</option>
+          <option value="UK">UK</option>
+          <option value="Wankanda">Wankanda</option>
+        </datalist>
+      </div>
+
+      <!-- File Upload  -->
+      <div>
+        <label for="file">Select File</label>
+        <input type="file" id = "fileUpload" />
+      </div>
+
+      <!-- normal submit  -->
+      <input type="submit" value="Submit"/>
+
+      <!-- using Button tag -->
+      <button type="submit"> Submit </button>
+    </form>
+  </body>
+</html>
+
+<!-- *------------------------------------- -->
+<!--* HTML Types of inputs in HTML Form
+<!-- *---------------------------------------- -->
+
+

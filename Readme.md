@@ -458,3 +458,136 @@ An ordered list starts with the <**ol**> tag. Each list item starts with the <**
 </ol>
  ```
 
+## Tables in HTML
+ - HTML tables allow web developers tp arrange data into rows and columns. We must write everything inside the table tag.
+
+```
+<table> Element: Defines an HTML table, which is used to organize data into rows and columns.
+
+ <tbody> Element : Groups the main content (data rows) of HTML table.
+
+ <thead>  Element : Groups the header content (table headings) within a table.
+
+ <th> Element : defines an header cell (table heading) within a table.
+
+ <td> Element : represents a data cell within an HTML table.
+
+ <tr> Element : Defines a row within an HTML table.
+
+```
+
+## HTML iframe 
+ - The <**iframe**> HTML element represents a nested browsing context, embedding another HTML Project into the current one.
+
+ ```
+ <iframe src="url" title = "abc"><iframe>
+ ```
+
+ - Src attribute defines the URL of the page to embed.
+ - Title = for screen readers
+
+- Q: How to create a Nested webpage --> iframe.
+
+## Audio in HTML 
+- Audio (<**audio**>) : teh Tag is used to embed audio content in a webpage. It supports various audio formats and provides controls for playback 
+
+- Attributes -->
+   1. controls: Adds playback controls (play, pause, volume, etc.).
+   2. autoplay: Starts playback automatically. 
+   3. loop: Repeats the media indefinitely.
+   4. preload: Specifies if the media should be loaded when the page loads. 
+   5. poster: Displays an image before the media loads. 
+
+   ```
+   
+    <audio controls autoplay> 
+      <source src = "audio/audio_thapa.mp3" type="audio/mp3">
+      <source src = "audio/audio_thapa.wav" type="audio/wav">
+    </audio>
+   ```
+
+- HTML Audio Tag - Commonly supported audio format.
+   1. MP3 (audio/mpeg): A widely supported format for audio. Provides good quality with reasonable file size. 
+   2. WAV (audio/wav): An uncompressed audio format with excellent quality, but larger file sizes. 
+   3. Ogg Vorbis (audio/ogg): A free and open audio format that provides good quality with smaller file sizes compared to MP3. 
+
+
+## HTML video Tag
+
+- The <**Video**> the HTML element embeds a media player which supports video playback into a document.
+
+```
+    <video controls muted loop  poster="./images/html.webp" width="500">
+      <source src="./files/Project/video/thapatech.mp4"  type="video/mp4">
+      <source src="./files/Project/video/thapatech1.webm" type="video/webm">
+      <source src="">
+    </video> 
+```
+## HTML form 
+
+- The <**form**> tag iis used to create an HTML form for used input.
+- The <**Input**> HTML element is used to create interactive controls for web-based forms to accept data from the user. We must write inside the tag.
+
+```
+<input type = "text" name="username">
+
+we have multiple values for the Type attribute.
+
+```
+
+## HTML semantic
+
+```
+<header> — Represents the introductory content for a section, article, or
+entire web page. Ex. Contains Logo, site title etc.
+<nav> — Navigation menu links would all be placed in a <nav> tag.
+<main> — The body of a page should go in the <main> tag. There should be
+only one per page.
+<article> — Represents an independent article on a web page. For example, a
+blog post.
+<section> — Represent a way of grouping together nearby content of a similar
+theme.
+<aside> — Represents the content that’s less important. It’s mostly used for
+sidebars (ads).
+<footer> — Represent the base of a page or section. It might include contact
+information and some site navigation.
+
+Single <main> Tag: As a best practice, use only one <main> tag per HTML page. The
+<main> tag should encapsulate the primary content of your webpage, excluding
+headers, footers, and sidebars.
+Use Headers Wisely: While you can use multiple <header> tags, make sure they're
+appropriately placed within semantic elements like <article>, <section>, or as
+introductory content for the whole page. Each <header> should provide relevant
+context.
+Avoid Overuse: Use semantic elements purposefully and avoid overusing them. Choose
+elements that accurately represent your content's structure and hierarchy.
+Overusing them may lead to confusion and diluted semantics.
+
+Understand Nesting: Understand the hierarchy and nesting rules of semantic elements.
+For instance, <article> and <section> can contain <header>, <footer>, and other
+content, but nesting them should reflect logical relationships.
+Enhance Accessibility: Semantic elements greatly improve web accessibility. Use them
+to create a clear structure for assistive technologies. Ensure that your content
+remains meaningful even if CSS or other styling is disabled.
+```
+## HTML Meta tags 
+
+Meta tags are HTML elements that provide metadata about a webpage. They are placed within the <**head**> section of an HTML document and are not visible to users but are used by browsers, search engines, and other web services to gather information about the page
+- <**meta name="viewport" content="width=device-width, initial-scale=1.0"**>:<br>Sets the viewport properties for responsive design.
+- <**meta charset="UTF-8"**>: Specifies the character encoding for the webpage, ensuring proper rendering of characters.
+- <**meta name="description" content="A brief description of the webpage"**>: Provides a concise description of the page's content.
+- <**meta name="keywords" content="keyword1, keyword2, keyword3"**>: Specifies relevant keywords for search engines (not as impactful as it used to be).
+- <**meta name="author" content="Author's Name"**>: Indicates the author of the webpage.
+- <**meta name="robots" content="index, follow"**>: Instructs search enginerobots whether to index and follow links on the page.
+
+## HTML SEO
+
+- High-Quality Content: Create valuable and relevant content that addresses users' needs.
+- Keyword Research: Use relevant keywords naturally within your content.
+- Descriptive Titles: Use descriptive and relevant titles for your pages (<**title**> tag).
+- Heading Tags: Use appropriate heading tags (<**h1**>, <**h2**>, etc.) to structure content.
+- Image Alt Text: Provide descriptive alt text for images.
+- Internal Links: Use internal links to connect related content within your site.
+- External Links: Link to reputable external sources when relevant.
+- Mobile-Friendly Design: Ensure your website is responsive and mobile-friendly.
+- Site Speed: Optimize your website's loading speed for better user experience.
